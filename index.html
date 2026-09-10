@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo Velásquez — Portfolio</title>
+  <meta name="description" content="AI agents, tooling y frontier tech. Documento lo que construyo (y lo que se rompe)." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="wrap header">
+    <p class="eyebrow">Bogotá, Colombia</p>
+    <h1>Leo Velásquez</h1>
+    <p class="bio">AI agents, tooling y frontier tech.<br />Documento lo que construyo <em>(y lo que se rompe)</em>.</p>
+    <nav class="links" aria-label="Redes">
+      <a href="https://x.com/0x4Leo" rel="noopener noreferrer" target="_blank">X / @0x4Leo</a>
+      <a href="https://github.com/leovelasqez" rel="noopener noreferrer" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">Proyectos</h2>
+        <p class="muted">Build-in-public. En progreso.</p>
+      </div>
+      <ul class="grid">
+        <li class="card">
+          <p class="tag">Agentes · Cripto</p>
+          <h3>Trader</h3>
+          <p>Agente semi-auto para BTC/USDT Futures en Binance: señales, riesgo fijo al SL, confirmación en chat. Documento fallos reales (API, IP, modo señal).</p>
+          <p class="status">En construcción</p>
+        </li>
+        <li class="card">
+          <p class="tag">Agent OS</p>
+          <h3>Gabinete de bots</h3>
+          <p>Squad coordinado: Jefe de gabinete, Código, Diseño, LinkedIn, Trader, X. Cada bot con un rol; yo orquesto.</p>
+          <p class="status">En construcción</p>
+        </li>
+        <li class="card card-wip">
+          <p class="tag">WIP</p>
+          <h3>Próximo build</h3>
+          <p>Espacio para el siguiente experimento en público — tooling, agentes o frontier tech.</p>
+          <p class="status">Pronto</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="y"></span> Leo Velásquez</p>
+    <p class="muted"><a href="https://x.com/0x4Leo">x.com/0x4Leo</a> · <a href="https://github.com/leovelasqez">github.com/leovelasqez</a></p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
