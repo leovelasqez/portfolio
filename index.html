@@ -3,59 +3,180 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Leo Velásquez — AI agents, tooling y frontier tech. Documento lo que construyo (y lo que se rompe)." />
   <title>Leo Velásquez — Portfolio</title>
-  <meta name="description" content="AI agents, tooling y frontier tech. Documento lo que construyo (y lo que se rompe)." />
-  <meta name="theme-color" content="#0a0a0b" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0d10;
+      --surface: #12161c;
+      --border: #243041;
+      --text: #e8edf5;
+      --muted: #9aa8bc;
+      --accent: #7dd3fc;
+      --accent-2: #a78bfa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(125, 211, 252, 0.12), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(167, 139, 250, 0.10), transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    main {
+      width: min(720px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+      background: rgba(18, 22, 28, 0.8);
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.9rem, 5vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .bio {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .links a:hover {
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .projects {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    article {
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent), var(--surface);
+    }
+
+    article h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    article p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 0.55rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+    }
+
+    footer {
+      margin-top: 2.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <header class="wrap header">
-    <p class="eyebrow">Bogotá, Colombia</p>
+  <main>
+    <span class="eyebrow">Portfolio · 2026</span>
     <h1>Leo Velásquez</h1>
-    <p class="bio">AI agents, tooling y frontier tech.<br />Documento lo que construyo <em>(y lo que se rompe)</em>.</p>
-    <nav class="links" aria-label="Redes">
-      <a href="https://x.com/0x4Leo" rel="noopener noreferrer" target="_blank">X / @0x4Leo</a>
-      <a href="https://github.com/leovelasqez" rel="noopener noreferrer" target="_blank">GitHub</a>
+    <p class="bio">
+      AI agents, tooling y frontier tech. Documento lo que construyo
+      <em>(y lo que se rompe)</em>.
+    </p>
+
+    <nav class="links" aria-label="Perfiles">
+      <a href="https://x.com/0x4Leo" rel="noopener noreferrer" target="_blank">X · @0x4Leo</a>
+      <a href="https://github.com/leovelasqez" rel="noopener noreferrer" target="_blank">GitHub · leovelasqez</a>
     </nav>
-  </header>
 
-  <main class="wrap">
-    <section aria-labelledby="projects-title">
-      <div class="section-head">
-        <h2 id="projects-title">Proyectos</h2>
-        <p class="muted">Build-in-public. En progreso.</p>
-      </div>
-      <ul class="grid">
-        <li class="card">
-          <p class="tag">Agentes · Cripto</p>
-          <h3>Trader</h3>
-          <p>Agente semi-auto para BTC/USDT Futures en Binance: señales, riesgo fijo al SL, confirmación en chat. Documento fallos reales (API, IP, modo señal).</p>
-          <p class="status">En construcción</p>
-        </li>
-        <li class="card">
-          <p class="tag">Agent OS</p>
-          <h3>Gabinete de bots</h3>
-          <p>Squad coordinado: Jefe de gabinete, Código, Diseño, LinkedIn, Trader, X. Cada bot con un rol; yo orquesto.</p>
-          <p class="status">En construcción</p>
-        </li>
-        <li class="card card-wip">
-          <p class="tag">WIP</p>
-          <h3>Próximo build</h3>
-          <p>Espacio para el siguiente experimento en público — tooling, agentes o frontier tech.</p>
-          <p class="status">Pronto</p>
-        </li>
-      </ul>
+    <h2>Proyectos</h2>
+    <section class="projects">
+      <article>
+        <span class="tag">Live</span>
+        <h3>Trader</h3>
+        <p>Bot de BTC/USDT perpetual futures en Binance: señales, riesgo y ejecución con agents.</p>
+      </article>
+      <article>
+        <span class="tag">Sistema</span>
+        <h3>Agent OS</h3>
+        <p>Stack de agents personales para coordinar código, contenido y operaciones del día a día.</p>
+      </article>
+      <article>
+        <span class="tag">WIP</span>
+        <h3>WIP</h3>
+        <p>Experimentos abiertos. Lo que todavía no tiene nombre, pero ya está en marcha.</p>
+      </article>
     </section>
-  </main>
 
-  <footer class="wrap footer">
-    <p>© <span id="y"></span> Leo Velásquez</p>
-    <p class="muted"><a href="https://x.com/0x4Leo">x.com/0x4Leo</a> · <a href="https://github.com/leovelasqez">github.com/leovelasqez</a></p>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    <footer>
+      Hecho a mano · <a href="https://github.com/leovelasqez/portfolio">código en GitHub</a>
+    </footer>
+  </main>
 </body>
 </html>

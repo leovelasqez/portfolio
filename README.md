@@ -1,26 +1,23 @@
-# Portfolio — Leo Velásquez
+# portfolio
 
-Sitio mínimo one-page: AI agents, tooling y frontier tech.
+Site one-page de Leo Velásquez: AI agents, tooling y frontier tech.
+Documento lo que construyo (y lo que se rompe).
 
-**Live (GitHub Pages):** https://leovelasqez.github.io/portfolio/
+- Site: `index.html` (dark, mobile-first)
+- Perfiles: [X @0x4Leo](https://x.com/0x4Leo) · [GitHub leovelasqez](https://github.com/leovelasqez)
+- Proyectos en la página: Trader · Agent OS · WIP
 
-## Local
+## GitHub Pages
 
-Abre `index.html` en el navegador, o:
+URL esperada tras activar Pages:
 
-```bash
-npx --yes serve .
-```
+`https://leovelasqez.github.io/portfolio/`
 
-## Deploy (GitHub Pages)
+### Activar (una vez)
 
-1. Repo → **Settings** → **Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main` / folder: `/ (root)`
-4. Save. En unos minutos: `https://leovelasqez.github.io/portfolio/`
+1. Abre [Settings → Pages](https://github.com/leovelasqez/portfolio/settings/pages)
+2. **Source:** Deploy from a branch
+3. **Branch:** `main` · folder `/ (root)`
+4. Save — en 1–2 minutos el site queda live
 
-Usa esa URL como link del perfil en X.
-
-## Stack
-
-HTML + CSS estático. Sin build step obligatorio.
+El archivo `.nojekyll` evita que Jekyll procese el HTML estático.
